@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\css\style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <!-- navbar section -->
-        <nav class="navbar">
-            <div class="logo-container">
-                <a href="#home" id="navbar__logo">Logo</a> 
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="#home" class="navbar__links" id="home-page">
-                        Home
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#about" class="navbar__links" id="about-page">
-                        About
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#services" class="navbar__links" id="services-page">
-                        Services
-                    </a>
-                </li>
-                <li class="navbar__btn">
-                    <a href="#sign-up" class="button" id="sign-up">
-                        Sign Up
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- hero section -->
-        <p>What the hell man</p>
-    </main>
-    <footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link rel="stylesheet" href="..\css\style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar section -->
+    <nav class="navbar">
+      <!-- nav.navbar -->
+      <div class="navbar__container">
+        <!-- .navbar__container -->
+        <a href="#home" id="navbar__logo">COLOR</a>
+        <!--a#navbar__logo-->
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page"> Home </a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page"> About </a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page">
+              Services
+            </a>
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="sign-up"> Sign Up </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- hero section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">Choose your <span>colors</span></h1>
+        <p class="hero__description">Unlimited Possibilities</p>
+        <button class="main__btn"><a href="#">Explore</a></button>
+      </div>
+    </div>
 
-    </footer>
-</body>
+    <!-- about section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><i class="fa fa-paper-plane-o"></i></div>
+        </div>
+        <div class="main__content">
+          <h1>What do we do?</h1>
+          <h2>We help businesses scale</h2>
+          <p>Schedule a call to learn more about our services</p>
+          <button class="main__btn"><a href="#">Schedule Call</a></button>
+        </div>
+      </div>
+    </div>
+    <script src="../js/app.js"></script>
+  </body>
 </html>
