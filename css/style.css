@@ -193,7 +193,7 @@ a :hover {
 }
 
 /* Carousel Section */
-.carousel__font {
+.carousel__container {
   font-size: 50px;
   display: flex;
   flex-direction: column;
@@ -206,6 +206,13 @@ a :hover {
   padding: 30px;
 }
 
+.carousel__secondslide {
+  justify-content: right;
+  align-items: right;
+  padding-left: 100px;
+  margin-left: 300px;
+  height: auto;
+}
 
 
 /* Hero section */
