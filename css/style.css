@@ -29,7 +29,8 @@ a :hover {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
-    
+    position: fixed;
+    background-color: #131313;
 }
 #navbar__logo{
     background-color: #ff8177;
