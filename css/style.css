@@ -8,7 +8,7 @@
 a :hover {
     text-decoration: none;
 }
-.navbar{
+.navbar__primary{
     background: #131313 ;
     height: 80px;
     display: flex;
@@ -29,7 +29,7 @@ a :hover {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
-    position: fixed;
+    position: relative;
     background-color: #131313;
 }
 #navbar__logo{
