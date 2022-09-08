@@ -191,6 +191,23 @@ a :hover {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+/* Carousel Section */
+.carousel__font {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90%;
+  text-align: center;
+  padding: 30px;
+}
+
+
+
 /* Hero section */
 .hero{
     background: #000000;
