@@ -393,6 +393,7 @@ border-radius: 4px;
 
 .services{
     background: #222020;
+    padding-bottom: 50px;
 }
 #serv--title{
   background: #02AAB0;  /* fallback for old browsers */
@@ -406,4 +407,18 @@ background: linear-gradient(to right, #00CDAC, #02AAB0); /* W3C, IE 10+/ Edge, F
 #serv--sub{
 color:#ffffff;
 font-size: 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .main__container{
+    grid-template-columns: 1fr;
+  }
+  .main__content{
+    padding-top: 50px;
+  }   
+  .main__img--card{
+    margin: 10px auto;
+    height: 300px;
+    width: 300px;
+  }
 }
