@@ -279,6 +279,7 @@ background-size: 100%;
 /* About section */
 
 .main{
+  width: 100vw;
   background-color: #131313;
   padding: 10rem 0;
 }
@@ -378,9 +379,8 @@ border-radius: 4px;
   text-align: center;
 }
 .main__img--card{
-  margin: 10px;
-  height: 500px;
-  width: 500px;
+  width: 80%;
+  aspect-ratio: 1;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -409,16 +409,20 @@ color:#ffffff;
 font-size: 1.5rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .main__container{
     grid-template-columns: 1fr;
   }
   .main__content{
     padding-top: 50px;
-  }   
-  .main__img--card{
-    margin: 10px auto;
-    height: 300px;
-    width: 300px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
+  .main__img--container {
+    display: flex;
+    justify-content: center;
+  }
+
 }
