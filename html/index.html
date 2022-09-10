@@ -178,16 +178,20 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="../Assets/CarouselPage1.png" class="d-block w-100" alt="Grow Your Company With Us">
-          <div class="carousel-caption d-none d-md-block carousel__container">
+          <div class="carousel-caption d-md-block">
+          
+          </div>
+          <div class="carousel-caption d-md-block">
+            <!-- removed d-none &  carousel__container for mobile responsivity-->
+            
             <h5>Push your brightest ideas with us.</h5>
-            <br><br><br>
-            <p>Grow your business</p>
-            <h1>with enticing websites for you and your future customers</h1>
+            <h2>Grow your business</h2>
+            <h5>with enticing websites for you and your future customers</h5>
           </div>
         </div>
         <div class="carousel-item">
           <img src="../Assets/CarouselPage2.png" class="d-block w-100" alt="Let's bring your company to the next level.">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block">
             <h2>Let's bring your company to the next level.</h2>
             <p>We make websites for:</p>
             <ul class="list-inline mx-auto justify-content-center">
@@ -200,7 +204,7 @@
         </div>
         <div class="carousel-item">
           <img src="../Assets/CarouselPage3.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block">
             <h5>Our team are made of professionals in different sectors</h5>
             <p>From website designers and developers, SEO managers, marketing and data analysts.</p>
           </div>
@@ -346,6 +350,14 @@
           </div>
         </div>
       </div>
+      </div>
+    </div>
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+      </button>
+
       <footer class="footer">
         <div class="container">
         <div class="row">
@@ -361,18 +373,18 @@
                  <h4>get help</h4>
                  <ul>
                    <li><a href="#">FAQ</a></li>
-                   <li><a href="#">shipping</a></li>
-                   <li><a href="#">returns</a></li>
-                   <li><a href="#">order status</a></li>
-                   <li><a href="#">payment options</a></li>
+                   <li><a href="#">Shipping</a></li>
+                   <li><a href="#">Returns</a></li>
+                   <li><a href="#">Order Status</a></li>
+                   <li><a href="#">Payment Options</a></li>
                  </ul>
                </div>
                <div class="footer-col">
-                 <h4>design services</h4>
+                 <h4>Design Services</h4>
                  <ul>
-                   <li><a href="#">Monochrome</a></li>
-                   <li><a href="#">Gradation</a></li>
-                   <li><a href="#">rainbow</a></li>
+                   <li><a href="#services">Monochrome</a></li>
+                   <li><a href="#services">Gradation</a></li>
+                   <li><a href="#services">Rainbow</a></li>
                  </ul>
                </div>
                <div class="footer-col">
@@ -405,5 +417,6 @@
         }
         
         </script>
+    
   </body>
 </html>

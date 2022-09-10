@@ -8,6 +8,7 @@
 a :hover {
     text-decoration: none;
 }
+
 .navbar__primary{
     background: #131313 ;
     height: 80px;
@@ -194,10 +195,7 @@ a :hover {
     }
 }
 
-/* Sign Up Modal */
-.btn {
-  background: rgb(71, 225, 99) !important;
-}
+
 
 /* Sign Up Section */
 input[type=text], input[type=password] {
@@ -267,6 +265,19 @@ button:hover {
   }
 }
 
+/* scroll to top */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: block;
+  width: 5%;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Carousel Section */
 .carousel__container {
@@ -277,9 +288,10 @@ button:hover {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  height: 90%;
+  height: 50%;
   text-align: center;
   padding: 30px;
+
 }
 
 
