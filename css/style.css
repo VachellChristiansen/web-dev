@@ -194,6 +194,11 @@ a :hover {
     }
 }
 
+/* Sign Up Modal */
+.btn {
+  background: rgb(71, 225, 99) !important;
+}
+
 /* Sign Up Section */
 input[type=text], input[type=password] {
   width: 100%;
