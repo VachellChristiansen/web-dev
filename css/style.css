@@ -549,6 +549,7 @@ a {
   width: 100vw;
   height: 100%;
   backdrop-filter: blur(10px);
+  
 }
 
 .form-container {

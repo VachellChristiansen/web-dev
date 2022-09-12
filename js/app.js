@@ -51,3 +51,4 @@ function hide2() {
   document.getElementById("screen2").classList.add("hidden");
 
 }
+

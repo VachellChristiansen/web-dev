@@ -58,7 +58,7 @@
             </a>
           </li>
           <li class="navbar__btn">
-            <button class="button" data-toggle="modal" data-target="#id01" onclick="show()">Sign Up</button>
+            <button class="button" id="sign-up" data-toggle="modal" data-target="#id01" onclick="show()">Sign Up</button>
         
           </li>
         </ul>
@@ -66,7 +66,7 @@
     </nav>
     <div class="modal" id="id01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
-    <div class="blur-screen hidden" id="screen">
+    <div class="blur-screen hidden" id="screen" onclick="hide()">
       <div class="form-container hidden" id="modal">
         <div class="form-header">
           <span class="f-header f-white">Sign Up</span>
@@ -93,7 +93,7 @@
    
     <div class="modal" id="id02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
-    <div class="blur-screen hidden" id="screen2">
+    <div class="blur-screen hidden" id="screen2" onclick="hide2()">
       <div class="form-container hidden" id="modal2">
         <div class="form-header">
           <span class="f-header f-white">Log In</span>
@@ -129,8 +129,6 @@
           
           </div>
           <div class="carousel-caption d-md-block">
-            <!-- removed d-none &  carousel__container for mobile responsivity-->
-            
             <h5>Push your brightest ideas with us.</h5>
             <h2>Grow your business</h2>
             <h5>with enticing websites for you and your future customers</h5>
@@ -326,15 +324,23 @@
     <script src="../js/app.js"></script>
       <script>
         // Get the modal
-        var modal = document.getElementById('id01');
+       /*var modal = document.getElementById('id01');
         var modal = document.getElementById('id02');        
-        // When the user clicks anywhere outside of the modal, close it
+
         window.onclick = function(event) {
           if (event.target == modal) {
             modal.style.display = "none";
           }
-        }
-        
+        } 
+
+        $(document).ready(function(){
+          // Close modal on button click
+          $(".screen").click(function(){
+              $("#screen").modal('hide');
+              $("#screen2").modal('hide');
+          });
+      });*/
+
         </script>
     
   </body>
