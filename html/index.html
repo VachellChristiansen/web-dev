@@ -16,6 +16,11 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -53,13 +58,41 @@
             </a>
           </li>
           <li class="navbar__btn">
-            <button class="button" data-toggle="modal" data-target="#id01">Sign Up</button>
+            <button class="button" data-toggle="modal" data-target="#id01" onclick="show()">Sign Up</button>
+        
           </li>
         </ul>
       </div>
     </nav>
+    <div class="modal" id="id01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="blur-screen hidden" id="screen">
+      <div class="form-container hidden" id="modal">
+        <div class="form-header">
+          <span class="f-header f-white">Sign Up</span>
+          <span class="f-header f-red">WE, DEV</span>
+          <a href="#" onclick="hide()"><span class="btn-close"  data-dismiss="modal" aria-label="Close">&times;</span></a>
+        </div>
+        <hr class="line">
+        <form class="form-inputs">
+          <input class="input" type="text" name="name" id="name" placeholder="Full Name" required />
+          <input class="input" type="text" name="username" id="username" placeholder="Username" required/>
+          <input class="input" type="email" name="email" id="email" placeholder="Email" required />
+          <input class="input" type="password" name="password" id="password" placeholder="Password" required/>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+            <label class="custom-control-label" for="customSwitch1">Remember me</label>
+          </div>
+          <span class="form-text">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</span>
+          <span class="form-text">Already have an account? <a href="#">Log In</a>.</span>
+          <input type="submit" value="Sign Up" />
+        </form>
+      </div>
+    </div>
+    </div>
+   
 
-    <div class="modal fade" id="id01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    <!-- <div class="modal fade" id="id01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -160,7 +193,7 @@
     </div>
   </div>
 </div> 
-  
+   -->
 
 <!-- Sign Up -->
 <!-- <div id="id01" class="modal">

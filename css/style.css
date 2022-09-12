@@ -1,3 +1,9 @@
+:root {
+  --primary: #4D7298;
+  --secondary: #D0EFB1;
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -34,6 +40,7 @@ a :hover {
     background-color: #131313;
 }
 #navbar__logo{
+    font-family: 'Bebas Neue', cursive, Verdana, Tahoma, sans-serif;
     background-color: #ff8177;
      background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
      background-size: 100%;
@@ -195,75 +202,12 @@ a :hover {
     }
 }
 
-
-
-/* Sign Up Section */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-button:hover {
-  opacity:1;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
-
-/* Add padding to container elements */
-.container {
-  padding: 10px;
-  
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 /* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
+/* @media screen and (max-width: 300px) {
   .cancelbtn, .signupbtn {
     width: 100%;
   }
-}
+} */
 
 /* scroll to top */
 #btn-back-to-top {
@@ -301,6 +245,7 @@ button:hover {
     background: linear-gradient(to right,#161616, #000000);
     padding: 200px 0;
 }
+
 .hero__container{
   display: flex;
   flex-direction: column;
@@ -589,4 +534,149 @@ ul{
   .footer-col{
     width: 100%;
   }
+}
+
+/* ObjectMaking */
+
+a {
+  text-decoration: none;
+}
+
+.blur-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  backdrop-filter: blur(10px);
+}
+
+.form-container {
+  font-family: 'Baloo Da 2', cursive, Verdana, Tahoma, sans-serif;
+  display: block;
+  border-radius: 10px;
+  width: 350px;
+  height: fit-content;
+  transform: 0.3s ease;
+  background: rgb(247,224,194);
+  background: -webkit-linear-gradient(112deg, rgba(247,224,194,1) 0%, rgba(194,134,137,1) 47%, rgba(134,138,194,1) 100%);;
+  background: linear-gradient(112deg, rgba(247,224,194,1) 0%, rgba(194,134,137,1) 47%, rgba(134,138,194,1) 100%);
+  box-shadow: 6px 11px 17px 1px rgba(0,0,0,0.58);
+-webkit-box-shadow: 6px 11px 17px 1px rgba(0,0,0,0.58);
+-moz-box-shadow: 6px 11px 17px 1px rgba(0,0,0,0.58);
+  padding: 1% 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/* placeholders */
+::placeholder{
+  font-family: 'Baloo Da 2', cursive, Verdana, Tahoma, sans-serif;
+  color:#642929;
+  font-size: 16px;
+  font-weight: 600;
+}
+::-moz-placeholder{
+  font-family: 'Baloo Da 2', cursive, Verdana, Tahoma, sans-serif;
+  color:#642929;
+  font-size: 16px;
+  font-weight: 600;
+}
+::-webkit-input-placeholder{
+  font-family: 'Baloo Da 2', cursive, Verdana, Tahoma, sans-serif;
+  color:#642929;
+  font-size: 16px;
+  font-weight: 600;
+}
+.form-header {
+  display: grid;
+  gap: 10px;
+  align-items: center;
+  grid-template-columns: 50% 40% 1fr;
+  margin : 0 8%;
+}
+
+.line {
+  border: none;
+  height: 5px;
+  color: #C16A6A;
+  background-color: #C16A6A;
+  box-shadow: inset 0px 3px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.form-inputs {
+  margin: 5% 8%;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+
+}
+
+.input {
+  margin-top: 1rem;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: inset 0px 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+  font-family: 'Baloo Da 2', cursive, Verdana, Tahoma, sans-serif,Verdana, Tahoma, sans-serif;
+font-size: 20px;
+font-weight: 700;
+  justify-self: center;
+  margin-top: 15px;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 30px;
+  width: 50%;
+  color: white;
+  background-color: #7AD078;
+  transition: background-color .5s ease;
+  box-shadow: 1px 5px 3px -1px rgba(0,0,0,0.58);
+-webkit-box-shadow: 1px 5px 3px -1px rgba(0,0,0,0.58);
+-moz-box-shadow: 1px 5px 3px -1px rgba(0,0,0,0.58);
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #b3fdb2 ;
+}
+
+.form-text {
+  font-family: 'Baloo Da 2', cursive, Verdana, Tahoma, sans-serif,Verdana, Tahoma, sans-serif;
+  margin-top: 0.5rem;
+  font-size: xx-small;
+  font-weight: 800;
+}
+
+.btn-close {
+  font-size: xx-large;
+  color:#7E3939;
+}
+
+.f-header {
+  font-size: xx-large;
+}
+
+.f-white {
+  font-family: 'Baloo Da 2', cursive, Verdana, Tahoma, sans-serif,Verdana, Tahoma, sans-serif;
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 800;
+}
+.f-black {
+  color: #000;
+}
+.f-red {
+  color: #9C0707;
+  font-family: 'Bebas Neue', cursive, Verdana, Tahoma, sans-serif;
+  font-size: 40px;
+}
+
+.custom-control-label {
+  font-family: 'Baloo Da 2', cursive, Verdana, Tahoma, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
 }
