@@ -36,12 +36,18 @@ function backToTop() {
 function show() {
   document.getElementById("modal").classList.remove("hidden");
   document.getElementById("screen").classList.remove("hidden");
-  document.getElementById("button").classList.add("hidden");
-  console.log("working...");
 }
 function hide() {
   document.getElementById("modal").classList.add("hidden");
   document.getElementById("screen").classList.add("hidden");
-  document.getElementById("button").classList.remove("hidden");
-  console.log("working...");
+}
+
+function show2() {
+  document.getElementById("modal2").classList.remove("hidden");
+  document.getElementById("screen2").classList.remove("hidden");
+}
+function hide2() {
+  document.getElementById("modal2").classList.add("hidden");
+  document.getElementById("screen2").classList.add("hidden");
+
 }
