@@ -294,6 +294,9 @@ background-size: 100%;
   border-bottom: 4px solid rgb(132,0,255);
 }
 @media screen and (max-width: 768px) {
+  .carousel{
+    display: none;
+  }
   .hero__heading{
     font-size: 60px;
   }
@@ -538,7 +541,8 @@ ul{
 
 /* ObjectMaking */
 
-a {
+.modal a {
+  font-family: 'Baloo Da 2', cursive, Verdana, Tahoma, sans-serif;
   text-decoration: none;
 }
 
