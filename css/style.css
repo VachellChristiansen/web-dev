@@ -557,8 +557,11 @@ ul{
   z-index: 100000;
   
 }
-
+.form-container a{
+  font-family: 'Baloo Da 2', cursive, Verdana, Tahoma, sans-serif;
+}
 .form-container {
+  transform: translateY(-10%);
   font-family: 'Baloo Da 2', cursive, Verdana, Tahoma, sans-serif;
   display: block;
   border-radius: 10px;
