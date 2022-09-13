@@ -52,3 +52,9 @@ function hide2() {
 
 }
 
+window.onclick = e => {
+  if (e.target.id === "screen") {
+    hide();
+    return;
+  }
+}
